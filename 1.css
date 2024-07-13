@@ -133,7 +133,6 @@ header{
     z-index: 1000;
     padding: 30px;
     box-shadow: 0 0 1px #000;
-    background: #010943;
 }
 .sticky #menu-icon{
     color: #fff !important;
