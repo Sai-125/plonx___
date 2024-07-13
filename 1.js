@@ -1,11 +1,18 @@
-const header = document.querySelector("header");
+const header = document.querySelector(".navbar");
+
+const head_sub = document.querySelector('.nav_main')
 
 window.addEventListener ("scroll", function() {
     header.classList.toggle ("sticky", window.scrollY > 0);
 });
 
+window.addEventListener ("scroll", function() {
+    head_sub.classList.toggle ("release", window.scrollY > 0);
+});
+
+
 let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.nav_links');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
@@ -43,6 +50,6 @@ valuedisplays.forEach(vd=>{
 
 AOS.init({
     // disable:true,
-    delay:50,
+    delay:100,
     duration:1000,
 });
